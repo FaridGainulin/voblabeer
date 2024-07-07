@@ -1,5 +1,5 @@
 .about-section
-  background-image: url("../images/about-section-bg.jpeg")
+  background-image: url("../images/about-section-bg.jpg")
   background-repeat: no-repeat
   background-position: center
   background-size: cover
@@ -20,6 +20,7 @@
       height: 265px
 
   &__img-nut
+    z-index: -1
     position: absolute
     bottom: 195px;
     right: -280px;
@@ -102,9 +103,8 @@
       flex-direction: row
 
   &__beer
-    padding 73px 0 63px 50px
-    border-radius: 18px
-    background-image: url("../images/about-section-beer.jpeg")
+    border-radius: 20px
+    background-image: url("../images/about-section-beer.jpg")
     background-repeat: no-repeat
     background-position: center
     background-size: cover
@@ -112,6 +112,7 @@
     height: 308px;
     padding: 20px 0 0px 35px;
     +above($breakpoints.sm)
+      padding 73px 0 63px 50px
       width 559px
       height: 446px
 

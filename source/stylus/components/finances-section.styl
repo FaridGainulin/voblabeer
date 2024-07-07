@@ -1,17 +1,18 @@
 .finances-section
-  background-image: url("../images/finance-section-bg.jpeg")
+  background-image: url("../images/finance-section-bg.jpg")
   background-repeat: no-repeat
   background-position: center bottom
   background-size: cover
   &__container
     position relative
-    padding 20px 0 20px 0
     +above($breakpoints.xxl)
       padding 179px 0 119px 0
 
   &__block
+    display: flex
+    flex-direction: column-reverse
     +above($breakpoints.xxl)
-      display: flex
+      flex-direction: row
       justify-content flex-end
 
 
@@ -68,6 +69,7 @@
       padding 16px 47px 13px 56px
 
   &__block-right-items
+    overflow: hidden
     margin: 0 auto
     border-left: 2px solid #62472b
     border-top: 2px solid #62472b

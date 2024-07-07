@@ -1,5 +1,5 @@
 .start-section
-  background-image: url("../images/start-section-bg.jpeg")
+  background-image: url("../images/start-section-bg.jpg")
   background-repeat: no-repeat
   background-position: top
   
@@ -59,10 +59,11 @@
     position relative
     background-color #543B32
     border-radius: 15px
-    padding 27px 0
+    padding 20px 0 3px 0
     display: flex
     flex-direction: column
     +above($breakpoints.sm)
+      padding 27px 0 27px 0
       gap 10px
       flex-direction: row
     +above($breakpoints.md)
@@ -74,14 +75,14 @@
 
 
   &__desc
-    padding 32px 20px 20px 30px
+    padding 15px 20px 20px 30px
     +above($breakpoints.sm)
       padding 23px 0 23px 62px
 
   &__bottom-title
     padding-left 30px
-    padding-top 47px
     +above($breakpoints.sm)
+      padding-top 47px
       padding-left 62px
 
   &__form
