@@ -1,0 +1,180 @@
+.about-section
+  background-image: url("../images/about-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 28px 0 145px 0
+
+  &__img
+    width 200px
+    height: auto
+    margin: 0 auto
+    +above($breakpoints.md)
+      margin: 0
+      width 318px
+      height: 265px
+
+  &__img-nut
+    position: absolute
+    bottom: 195px;
+    right: -280px;
+
+  &__top
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    padding-bottom 20px
+    +above($breakpoints.md)
+      text-align: start
+      flex-direction: row
+      gap 27px
+      padding-bottom 48px
+      padding-left 46px
+
+  &__title
+    padding-top 35px
+
+  &__inner
+    display: flex
+    flex-direction: column
+    gap: 10px
+    padding 20px
+    border-radius: 20px
+    background-color #1d1d1b78
+    +above($breakpoints.sm)
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 56px
+      background-color transparent
+      padding 77px 0 102px 103px
+      &::after
+        content: "";
+        width: 100vw;
+        position: absolute;
+        right: 1px;
+        border-top-right-radius: 60px;
+        background-color: #1d1d1b;
+        opacity: 0.6;
+        border: 1px solid #beb4a7;
+        background-repeat: no-repeat;
+        background-size: 845px 100%;
+        background-position: right;
+        z-index: -1;
+        top: 339px;
+        height: 603px;
+        +above($breakpoints.xxl)
+          top: 340px;
+          height: 635px;
+
+
+  &__inner-item
+    +above($breakpoints.sm)
+      padding 3px 0 3px 32px
+      border-left: 4px solid #F6CA52
+
+  &__img-arrows
+    margin 20px auto
+    +above($breakpoints.sm)
+      margin 45px auto
+
+  &__img-plant
+    display: none
+    +above($breakpoints.md)
+      display: block
+      position: absolute
+      top: 693px;
+      right: -312px;
+
+  &__bottom
+    width 100%
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(225.75deg, rgb(244, 184, 63) 14.997%,rgb(247, 208, 70) 91.683%),rgb(227, 6, 19)
+    display: flex
+    flex-direction: column
+    +above($breakpoints.sm)
+      flex-direction: row
+
+  &__beer
+    padding 73px 0 63px 50px
+    border-radius: 18px
+    background-image: url("../images/about-section-beer.jpeg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 308px;
+    height: 308px;
+    padding: 20px 0 0px 35px;
+    +above($breakpoints.sm)
+      width 559px
+      height: 446px
+
+  &__form
+    width: 308px;
+    padding: 20px;
+    display: flex
+    flex-direction: column
+    gap: 7px
+    +above($breakpoints.sm)
+      width 621px
+      padding 62px 50px 63px 47px
+
+  &__text
+    padding-top 158px
+
+  &__textarea
+    border 1px solid $color-yellow
+    border-radius: 13px
+    padding 23px 25px
+    background-color white
+    width 100%
+    height: 120px
+    font-family: "Rubik-Regular"
+    font-weight: 400
+    font-size: 18px;
+    line-height: 120%
+    color: $color-grey
+    transition border-color 0.3s, box-shadow 0.3s
+    resize: none
+    &::placeholder
+      color: $color-grey
+    &:hover
+      border 1px solid $color-yellow
+    &:focus
+      color: $color-grey
+      border-color $color-yellow
+      box-shadow: 0px 8px 20px 0px #f4b83f
+      outline none
+      caret-color: $color-grey
+
+    &.error
+        border 1px solid $color-error
+        color: $color-error
+        &::placeholder
+          color: $color-error
+        &::-ms-input-placeholder
+          color: $color-error
+        animation: shake 0.6s;
+        @keyframes shake {
+          10%, 90% {
+            transform: translate3d(-1px, 0, 0)
+          }
+          
+          20%, 80% {
+            transform: translate3d(2px, 0, 0)
+          }
+
+          30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0)
+          }
+
+          40%, 60% {
+            transform: translate3d(4px, 0, 0)
+          }
+        }

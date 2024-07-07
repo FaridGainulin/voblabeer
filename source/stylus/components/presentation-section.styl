@@ -1,0 +1,113 @@
+.presentation-section
+  background-image: url("../images/presentation-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: bottom
+  background-size: contain
+  &__container
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 95px 0 75px 0
+
+  &__title
+    color $color-black
+    text-align: center
+    padding-bottom 20px
+    +above($breakpoints.md)
+      padding-bottom 40px
+
+
+  &__cards
+    +above($breakpoints.md)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      gap 20px
+
+  &__card
+    width 300px !important
+    margin 0 auto
+    +above($breakpoints.sm)
+      margin: 0
+      width 380px !important
+
+  &__card-img
+    width 300px
+    height: auto
+    border-radius: 15px
+    +above($breakpoints.sm)
+      width 380px
+      height: 300px
+
+  &__inner
+    +above($breakpoints.md)
+      background: linear-gradient(90deg, #f7d046, #f4b83f)
+      padding 40px 0
+      border-radius: 15px
+
+  &__bottom
+    position relative
+    background-color #543B32
+    border-radius: 15px
+    padding 39px 0
+    display: flex
+    flex-direction: column
+    +above($breakpoints.sm)
+      gap 10px
+      flex-direction: row
+    +above($breakpoints.md)
+      justify-content center
+      gap 74px
+    +above($breakpoints.xxl)
+      justify-content start
+
+
+  &__desc
+    padding 0px 20px 20px 30px
+    +above($breakpoints.sm)
+      padding 23px 0 23px 62px
+
+  &__bottom-title
+    padding-left 30px
+    padding-bottom 23px
+    +above($breakpoints.sm)
+      padding-left 62px
+
+  &__form
+    width 300px
+    padding 28px 30px
+    margin 0 auto
+    border-radius: 15px
+    background-color #654f47
+    +above($breakpoints.sm)
+      margin 0
+
+  &__input
+    padding 22px 0 10px 0
+
+  &__prizm
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      bottom: 0
+      right: -3px
+
+  &__blanks
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      bottom: 0
+      right: -55px
+
+  &__padding
+    padding-bottom 20px
+    +above($breakpoints.md)
+      padding-bottom 105px
+
+.invisible
+  +above($breakpoints.md)
+    display: none
+  +above($breakpoints.xxl)
+    display: block

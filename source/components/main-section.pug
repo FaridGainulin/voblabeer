@@ -1,0 +1,57 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      .main-section__inner
+        .main-section__inner-left
+          img.main-section__image(src="images/main-section-image.png" loading="lazy" width="938" height="938" alt="image")
+          img.main-section__image-decor(src="images/main-section-image-decor.png" loading="lazy" width="153" height="121" alt="image")
+        .main-section__inner-right
+          .main-section__title
+            h1.font-w-cunia.font-s-55.text-up
+              | Станьте партнером
+              br
+              span.mark крупной сети
+              br
+              | пивных магазинов
+          .main-section__desc.font-s-28
+            | И 
+            span.mark.font-w-bold.mark-bg получайте от 115 000 руб
+            br
+            | чистой прибыли с одной открытой точки
+          .main-section__items
+            .main-section__item-info
+              img.main-section__info-img(src="images/main-section-info-img.png" loading="lazy" width="79" height="79" alt="img")
+              .mark.font-w-bold.font-s-22 Узнайте,
+              .main-section__item-text.font-s-16
+                | как запустить бизнес<br>
+                | по франшизе «Воблаbeer»<br>
+                | в вашем городе
+              img.main-section__arrow-img(src="images/main-section-arrow.svg" loading="lazy" width="119" height="20px" alt="arrow")
+            form.main-section__item-form(data-feedback-form)
+              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              button.btn(type="submit") УЗНАТЬ
+.main-section__bottom
+  .wrapper
+    .swiper-small
+      .main-section__cards.swiper-wrapper
+        .main-section__card.slide1.swiper-slide
+          img.main-section__wreath(src="images/main-section-wreath.svg" loading="lazy" width="55" height="50" alt="wreath")
+          .font-w-cunia.font-s-26.mark2.main-section__card-text 113 магазинов
+          .font-s-20 открыто
+        .main-section__bottom-line
+        .main-section__card.slide2.swiper-slide
+          img.main-section__wreath(src="images/main-section-wreath.svg" loading="lazy" width="55" height="50" alt="wreath")
+          .font-w-cunia.font-s-26.mark2.main-section__card-text 34
+          .font-s-20 франчайзи
+        .main-section__bottom-line
+        .main-section__card.slide3.swiper-slide
+          img.main-section__wreath(src="images/main-section-wreath.svg" loading="lazy" width="55" height="50" alt="wreath")
+          .font-w-cunia.font-s-26.mark2.main-section__card-text более 200 000
+          .font-s-20 активных покупателей
+        img.main-section__flag(src="images/main-section-flag.png" loading="lazy" width="235" height="275" alt="flag")
+        .linear-gradient
+      .small-pagination.swiper-progress-small
+
+

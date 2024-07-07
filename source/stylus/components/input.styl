@@ -1,0 +1,77 @@
+.input
+  height: 50px
+  width 100%
+  padding: 0 25px;
+  font-family: "Rubik-Regular"
+  font-weight: 400
+  font-size: 18px;
+  line-height: 120%
+  color: $color-grey
+  background-color: $color-white
+  border-radius: 13px;
+  transition border-color 0.3s, box-shadow 0.3s
+  &:hover
+    border 1px solid $color-yellow
+  &:focus
+    color: $color-grey
+    caret-color: $color-grey
+    border 1px solid $color-yellow
+    box-shadow: 0px 8px 20px 0px #f4b83f
+    ::placeholder
+      color: $color-grey
+  &::placeholder
+    color: $color-grey
+  +above($breakpoints.sm)
+    height: 55px
+
+  +above($breakpoints.md)
+    height: 60px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &--holder-white
+    &:focus
+      color: $color-white
+
+  &--bg-brown
+    background-color: #654f47
+    color: white
+    border 1px solid white
+    &:focus
+      color: white
+      ::placeholder
+        color: white
+    &::placeholder
+      color: white
+
+  &--small
+    background-color: white
+    +above($breakpoints.lg)
+      max-width: 258px
+
+  &--medium
+    +above($breakpoints.md)
+      max-width: 268px
+
+  &--textarea
+    outline none
+    padding: 23px 0 0 34px
+    resize: none
+    height: 120px
+

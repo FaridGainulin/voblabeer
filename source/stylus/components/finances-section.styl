@@ -1,0 +1,105 @@
+.finances-section
+  background-image: url("../images/finance-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-size: cover
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 179px 0 119px 0
+
+  &__block
+    +above($breakpoints.xxl)
+      display: flex
+      justify-content flex-end
+
+
+  &__img
+    width 300px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.sm)
+      width 700px
+      height: auto
+    +above($breakpoints.md)
+      width 500px
+      height: auto
+    +above($breakpoints.xxl)
+      width 1053px
+      height: 927px
+      position: absolute
+      top: 61px;
+      left: -637px;
+
+  &__block-right-inner
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding 20px 0
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 30px
+      justify-content center
+    +above($breakpoints.xxl)
+      padding 0 0 39px 0
+
+  &__icon
+    width 100px
+    height: auto
+    padding 20px 0
+    +above($breakpoints.md)
+      width 144px
+      height: 144px
+
+  &__title
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+
+  &__keys
+    width 100%
+    max-width 614px
+    border-radius: 23px
+    padding 10px
+    color: black
+    background: linear-gradient(90deg, #f7d046, #f4b83f);
+    +above($breakpoints.sm)
+      padding 16px 47px 13px 56px
+
+  &__block-right-items
+    margin: 0 auto
+    border-left: 2px solid #62472b
+    border-top: 2px solid #62472b
+    border-bottom: 2px solid #62472b
+    width 100%
+    max-width: 700px
+    backdrop-filter: blur(55px);
+    background: linear-gradient(72.65deg, rgba(84, 59, 50, 0) -3.347%,rgb(84, 59, 50) 96.896%)
+    padding: 26px 10px
+    border-radius: 25px
+    +above($breakpoints.sm)
+      padding: 26px 43px
+    +above($breakpoints.xxl)
+      padding 26px 43px 45px 43px
+
+  &__cards
+    padding-top 45px
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      gap: 10px
+    +above($breakpoints.xxl)
+      row-gap: 44px
+      column-gap: 10px
+
+  &__card
+    border-radius: 25px
+    display: flex
+    flex-direction: row
+    gap 33px
+    width 250px !important
+    height: 83px
+    +above($breakpoints.sm)
+      width 300px !important

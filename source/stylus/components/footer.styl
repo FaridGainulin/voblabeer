@@ -1,0 +1,32 @@
+.footer
+  &__container
+    margin: 0 auto
+    padding 20px 0 20px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    +above($breakpoints.sm)
+      padding 34px 0
+      flex-direction: row
+      justify-content space-between
+
+  &__text
+    width 150px
+    padding-left 10px
+    border-left: 1px solid black
+    color: black
+    +above($breakpoints.sm)
+      width 170px
+      padding-left 25px
+
+  &__connection
+    width 240px
+    display: flex
+    flex-direction: row
+    gap 11px
+
+  &__block-inner
+    display: flex
+    align-items: center
+    gap 20px

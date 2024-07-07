@@ -1,0 +1,78 @@
+.btn
+  height: 50px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: $color-black
+  border-radius: 13px
+  background: linear-gradient(270.00deg, rgb(247, 208, 70),rgb(244, 184, 63) 100%)
+  font-family: "Cunia-Bold"
+  font-weight: 700
+  font-size: 20px;
+  line-height: 120%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    height: 55px;
+  +above($breakpoints.md)
+    height: 60px
+
+  &:hover
+    transform: scale(1.05)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--brown
+    background: $color-brown
+    color $color-white
+
+  &--text-brown
+    color #543B32
+
+  &--large
+    max-width 260px
+    height: 55px
+    +above($breakpoints.sm)
+      height: 60px;
+    +above($breakpoints.md)
+      height: 65px
+
+  &--xl
+    max-width 264px
+
+  &--xxl
+    max-width 275px
+
+  &--xxxl
+    width 100%
+    +above($breakpoints.lg)
+      max-width 313px
+
+  &--number-call
+    color: #0A0D2A
+    font-size: 12px
+    +above($breakpoints.sm)
+      font-size: 20px
+

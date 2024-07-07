@@ -1,0 +1,199 @@
+.main-section
+  background-image: url("../images/main-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    position relative
+    padding: 15px 0 15px 0
+    +above($breakpoints.md)
+      padding: 56px 0 25px 0
+
+  &__inner
+    padding-top 15px
+
+  &__inner-left
+    position relative
+
+
+  &__image
+    width 200px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.sm)
+      width 300px
+      position: absolute
+      top: 0
+      left: 0
+    +above($breakpoints.md)
+      top 100px
+    +above($breakpoints.xxl)
+      width 938px
+      height: 938px
+      top: 40px;
+      left: -524px;
+
+  &__image-decor
+    position: absolute
+    top: -11px;
+    right: 34px;
+    width 50px
+    height: auto
+    +above($breakpoints.sm)
+      top: -10px;
+      left: 269px;
+    +above($breakpoints.md)
+      top: 88px;
+      left: 269px;
+    +above($breakpoints.xxl)
+      width 153px
+      height: 121px
+      top 21px;
+      left: 298px;
+
+  &__title,
+  &__desc
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+
+  &__title
+    padding 15px 0 0 0
+    +above($breakpoints.sm)
+      padding 15px 0 0 300px
+    +above($breakpoints.md)
+      padding 139px 0 0 400px
+    +above($breakpoints.xxl)
+      padding 139px 0 0 545px
+
+  &__desc
+    padding: 15px 0 15px 0
+    +above($breakpoints.sm)
+      padding: 30px 0 120px 300px
+    +above($breakpoints.md)
+      padding: 31px 0 92px 400px
+    +above($breakpoints.xxl)
+      padding: 31px 0 92px 545px
+
+  &__items
+    padding-bottom: 15px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content center
+    +above($breakpoints.xxl)
+      padding-bottom: 155px
+      justify-content flex-end
+
+  &__item-info
+    background-color $color-brown
+    border-radius: 13px
+    padding: 10px 10px
+    width 302px
+    height: 97px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding: 27px 29px
+      width 280px
+      height: 271px
+
+  &__info-img,
+  &__arrow-img
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__item-text
+    padding-bottom 30px
+
+  &__item-form
+    position relative
+    z-index 1
+    padding: 35px 25px
+    width 302px
+    height: 240px
+    border-radius: 13px
+    background-color $color-brown
+    display: flex
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.sm)
+      height: 271px
+
+  &__cards
+    position relative
+    padding: 15px 0
+    display: flex
+    flex-direction: row
+    justify-content space-evenly
+    align-items: center
+    +above($breakpoints.sm)
+      border-radius: 30px;
+      border-top: 2px solid #2c1f1b;
+      border-left: 2px solid #2c1f1b;
+      border-bottom: 2px solid #2c1f1b;
+      background: linear-gradient(55.49deg, rgba(84, 59, 50, 0) -0.141%,rgb(44, 31, 27) 94.984%)
+      padding: 40px 0
+    +above($breakpoints.xl)
+      justify-content flex-start
+
+
+  &__card
+    display: flex
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      width 200px !important
+    +above($breakpoints.lg)
+      width 223px !important
+
+  &__card-text
+    padding 17px 0 5px 0
+
+  &__flag
+    display: none
+    +above($breakpoints.xxl)
+      display: block
+      position: absolute
+      bottom: -20px
+      right: 0
+
+  &__bottom-line
+    display: none
+    +above($breakpoints.xl)
+      display: block
+    width 1px
+    height: 91px
+    border 1px solid #543B32
+
+  &__bottom
+    background-color #120b06
+    padding-bottom 20px
+    +above($breakpoints.xxl)
+      padding-bottom 96px
+
+.slide1
+  +above($breakpoints.xl)
+    margin: 0 75px 0 65px
+.slide2
+  +above($breakpoints.xl)
+    margin: 0 10px 0 20px
+.slide3
+  +above($breakpoints.xl)
+    margin: 0 0 0 60px
+
+.linear-gradient
+  +above($breakpoints.xxl)
+    height: 300px;
+    width: 200vw;
+    position: absolute;
+    bottom: 215px;
+    z-index: -1;
+    left: -50vw;
+    right: 50vw;
+    background: linear-gradient(180deg, rgba(18, 11, 6, 0), #120b06 64.784%);
