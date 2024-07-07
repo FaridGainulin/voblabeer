@@ -3,11 +3,13 @@
   background-repeat: no-repeat
   background-position: center
   background-size: cover
+  border-top-left-radius: 45px
+  border-top-right-radius: 45px
 
   &__container
-    padding 20px 0 20px 0
+    padding 20px 0 0 0
     +above($breakpoints.md)
-      padding 113px 0 107px 0
+      padding 113px 0 0 0
 
   &__inner
     display: flex
@@ -37,7 +39,7 @@
     +above($breakpoints.md)
       margin: 36px auto 52px auto;
 
-  &__cards
+  &__block
     padding 20px 0
     +above($breakpoints.lg)
       border-radius: 20px
@@ -47,13 +49,22 @@
       backdrop-filter: blur(55px);
       background: linear-gradient(90.00deg, rgba(84, 58, 47, 0.5),rgba(186, 129, 104, 0) 100%),rgba(0, 0, 0, 0.5)
       display: flex
-      flex-direction: row
-      gap: 20px
+      flex-direction: column
       justify-content center
     +above($breakpoints.xxl)
+      width 100%
+      max-width 1680px
       border-radius: 55px
       padding 63px 0 110px 0
-      gap: 40px
+
+  &__cards
+    +above($breakpoints.lg)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 13px
+      +above($breakpoints.xxl)
+        gap: 40px
 
   &__card
     width 300px !important
@@ -91,3 +102,6 @@
     flex-direction: column
     gap: 10px
     padding-top 15px
+
+  &__padding
+    padding-bottom 107px
