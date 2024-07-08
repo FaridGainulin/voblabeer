@@ -2,6 +2,9 @@
   background-image: url("../images/start-section-bg.jpg")
   background-repeat: no-repeat
   background-position: top
+  background-size: 800px auto
+  +above($breakpoints.sm)
+    background-size: auto
   
   &__container
     padding 20px 0 20px 0
@@ -16,14 +19,19 @@
     color: black
     background-color #fff
     border-radius: 92px
-    padding 43px 57px 29px 57px
-    margin-bottom 80px
+    padding 18px 10px 14px 10px
+    margin-bottom 40px
+    +above($breakpoints.sm)
+      margin-bottom 80px
+      padding 43px 57px 29px 57px
 
   &__arrow
     margin 0 auto
 
   &__arrow-padding
-    padding: 0 0 55px 0
+    padding: 0 0 6px 0
+    +above($breakpoints.sm)
+      padding: 0 0 55px 0
     +above($breakpoints.md)
       padding: 0 0 37px 0
 
