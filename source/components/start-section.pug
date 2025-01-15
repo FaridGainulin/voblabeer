@@ -98,6 +98,7 @@ section.start-section
         .start-section__form
           .font-w-bold.text-center Скачайте пример
           form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
             .start-section__input
-              input.input.input--bg-brown(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              input.input.input--bg-brown(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
             button.btn.start-section__btn(type="submit") скачать пример <br> договора

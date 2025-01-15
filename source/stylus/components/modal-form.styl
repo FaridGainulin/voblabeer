@@ -1,24 +1,27 @@
 .form-modal
   &__feedback
     border-radius: 12px;
-    background: linear-gradient(170deg, #fef6f3 0%, #DFDFDF 100%);
-    color: $color-grey-main
-    padding: 36px 10px 17px 10px;
+    background: #543b32
+    color: #fff
+    padding: 20px 10px 17px 10px;
     +above($breakpoints.sm)
       padding: 32px 17px
     +above($breakpoints.xxl)
       padding: 40px 32px
 
   &__info-title
-    font-size: 19px;
+    font-size: 15px;
     margin: 0 0 18px 0
-    font-family: $base-font-family
+    font-family: "Cunia-Bold"
+    color: #F6CA52
     font-weight: 700
     +above($breakpoints.sm)
-      font-size: 21px
+      font-size: 16px
       margin: 0 0 20px 0
+    +above($breakpoints.md)
+      font-size: 18px
     +above($breakpoints.xxl)
-      font-size: 23px
+      font-size: 20px
     br
       display: block
 
@@ -55,15 +58,13 @@
 
   &__agree
     font-size: 10px;
-    line-height: 13px;
+    line-height: 120%
+    font-family: "Rubik-Regular"
     +above($breakpoints.sm)
       font-size: 11px;
-      line-height: 13px;
     +above($breakpoints.md)
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 11px;
     +above($breakpoints.xxl)
       font-size: 13px;
-      line-height: 15px;
     a
       text-decoration: underline

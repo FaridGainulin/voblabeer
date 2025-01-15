@@ -10,13 +10,23 @@
 
   &__connection
     width 100%
-    max-width: 240px
+    max-width: 140px
+    +above($breakpoints.sm)
+      max-width: 240px
 
   &__title
     display: none
     +above($breakpoints.sm)
       display: block
 
+  &__title-mobile
+    text-align: center
+    padding 3px 0
+    margin-top 5px
+    border-radius: 5px
+    background-color #543b32
+    +above($breakpoints.sm)
+      display: none
 
 .logo-img
   width 112px

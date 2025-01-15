@@ -25,9 +25,10 @@ section.about-section
             span.mark3 вопросы 
             | по франшизе!
         form.about-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
           textarea.about-section__textarea(name="answer" placeholder="Ваш вопрос")
           input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
-          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
           button.btn.btn--brown(type="submit") задать вопрос основателям
 
 

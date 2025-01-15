@@ -46,6 +46,12 @@ function initFeedbackForm() {
   $forms.on('submit', function (event) {
     event.preventDefault()
 
+    // Проверка на заполнение honeypot-поля
+    if ($(this).find('.honeypot').val() !== '') {
+      event.preventDefault();
+      alert('Отправка заблокирована.');
+    }
+
     if ($(this).valid()) {
       var fields = $(this)
         .serializeArray()

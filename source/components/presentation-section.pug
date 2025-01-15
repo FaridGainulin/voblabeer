@@ -39,8 +39,9 @@ section.presentation-section
       .presentation-section__form
         .font-w-bold.text-center Скачайте модель
         form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
           .presentation-section__input
-            input.input.input--bg-brown(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            input.input.input--bg-brown(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
           button.btn.btn(type="submit") скачать
     .presentation-section__padding
 

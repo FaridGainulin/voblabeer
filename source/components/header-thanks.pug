@@ -1,12 +1,9 @@
-.header-thanks
-  .wrapper
-    header.header
-    .header__inner
-      .header__left
-        .header__logo
-          include ../components/logo.pug
-        .header__title.font-s-16 Франшиза кондитерской <br> студии & кофейни
-      .header-thanks__right
-        .header-thanks__connection
-          include ../components/phone-number.pug
-    .header__line
+header.header
+  .header__container
+    .header__title
+      .font-s-16.font-w-bold.color-yellow ВоблаBeer
+      .font-s-14 Франшиза сети <br> пивных магазинов
+    .header__logo
+      include ../components/logo.pug
+    .header__connection
+      a.header__call.btn.btn--number-call(href="tel:+79999999999") +7 999 999 99 99

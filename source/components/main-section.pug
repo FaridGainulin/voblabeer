@@ -9,16 +9,15 @@ section.main-section
         .main-section__inner-right
           .main-section__title
             h1.font-w-cunia.font-s-55.text-up
-              | Станьте партнером 
+              | Станьте партнёром 
               br
               span.mark крупной сети 
               br
               | пивных магазинов
-          .main-section__desc.font-s-28
-            | И 
-            span.mark.font-w-bold.mark-bg получайте от 115 000 руб
+          .main-section__desc.font-s-28-a
+            span.mark.font-w-bold.mark-bg-main И зарабатывайте от 1 380 000 рублей 
             br
-            | чистой прибыли с одной открытой точки
+            | чистой прибыли в год с одной открытой точки
           .main-section__items
             .main-section__item-info
               img.main-section__info-img(src="images/main-section-info-img.png" loading="lazy" width="79" height="79" alt="img")
@@ -29,8 +28,9 @@ section.main-section
                 | в вашем городе
               img.main-section__arrow-img(src="images/main-section-arrow.svg" loading="lazy" width="119" height="20px" alt="arrow")
             form.main-section__item-form(data-feedback-form)
-              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
-              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
               button.btn(type="submit") УЗНАТЬ
 .main-section__bottom
   .wrapper
