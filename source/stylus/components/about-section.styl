@@ -124,7 +124,15 @@
     gap: 7px
     +above($breakpoints.sm)
       width 621px
-      padding 62px 50px 63px 47px
+      padding: 50px 20px 50px 25px;
+    +above($breakpoints.md)
+      padding: 50px 50px 50px 47px;
+    +above($breakpoints.xxl)
+      padding 47px
+
+  &__form .agree__text
+    +above($breakpoints.sm)
+      display: block
 
   &__text
     padding-top 158px

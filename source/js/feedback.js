@@ -41,6 +41,7 @@ function createFormData(data) {
 }
 
 function initFeedbackForm() {
+  const EXCLUDED_NAMES = ['agree']
   const $forms = $('[data-feedback-form]')
 
   $forms.on('submit', function (event) {
@@ -56,6 +57,10 @@ function initFeedbackForm() {
       var fields = $(this)
         .serializeArray()
         .reduce(function (acc, current) {
+          if (EXCLUDED_NAMES.includes(current.name)) {
+            return acc;
+          }
+
           return $.extend(acc, { [current.name]: current.value })
         }, {})
 

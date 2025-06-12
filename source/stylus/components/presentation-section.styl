@@ -69,16 +69,17 @@
     position relative
     background-color #543B32
     border-radius: 15px
-    padding 20px 0 3px 0
+    padding 20px 0 0 0
     display: flex
     flex-direction: column
     +above($breakpoints.sm)
-      padding 38px 0
-      gap 10px
+      padding 20px 0
+      gap 20px
       flex-direction: row
     +above($breakpoints.md)
       justify-content center
-      gap 74px
+      gap 60px
+      padding 25px 0 24px
     +above($breakpoints.xxl)
       justify-content start
 
@@ -86,25 +87,38 @@
   &__desc
     padding 0px 20px 20px 30px
     +above($breakpoints.sm)
+      padding 23px 0 23px 30px
+    +above($breakpoints.md)
       padding 23px 0 23px 62px
 
   &__bottom-title
     padding-left 30px
     padding-bottom 23px
     +above($breakpoints.sm)
+      padding-left 30px
+    +above($breakpoints.md)
       padding-left 62px
 
   &__form
-    width 300px
+    width 308px
     padding 28px 30px
     margin 0 auto
     border-radius: 15px
     background-color #654f47
     +above($breakpoints.sm)
+      width 315px
       margin 0
+      padding 20px
+    +above($breakpoints.md)
+      padding 20px
+    +above($breakpoints.xxl)
+      padding 20px
 
   &__input
     padding 22px 0 10px 0
+
+  &__agree-wrapper
+    margin-top 10px
 
   &__prizm
     display: none

@@ -110,6 +110,8 @@
       padding: 27px 29px
       width 280px
       height: 271px
+    +above($breakpoints.xxl)
+      height: 291px
 
   &__info-img,
   &__arrow-img
@@ -125,7 +127,7 @@
     z-index 1
     padding: 35px 25px
     width 302px
-    height: 240px
+    height: 280px
     border-radius: 13px
     background-color $color-brown
     display: flex
@@ -133,6 +135,9 @@
     gap: 10px
     +above($breakpoints.sm)
       height: 271px
+      padding 22px 25px
+    +above($breakpoints.xxl)
+      height: 291px
 
   &__cards
     position relative

@@ -1,6 +1,10 @@
 extends ../layouts/base
 
 block body
-  .layout
-    main.main
-      include ../components/thanks-section.pug
+    .layout.thanks-page
+      .wrapper-header-thanks
+        .wrapper
+          include ../components/header.pug
+      main.main
+        include ../components/thanks-section.pug
+      include ../components/footer.pug
